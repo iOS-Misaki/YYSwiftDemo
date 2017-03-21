@@ -14,6 +14,10 @@
 		FE5538C81E7ACCCE0018E624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5538C61E7ACCCE0018E624 /* LaunchScreen.storyboard */; };
 		FE5538D31E7ACCCE0018E624 /* YYSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538D21E7ACCCE0018E624 /* YYSwiftDemoTests.swift */; };
 		FE5538DE1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */; };
+		FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538EB1E7ACFF80018E624 /* Global.swift */; };
+		FE5538EE1E7BBBA80018E624 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */; };
+		FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED2791E8104A300CBB764 /* MaskBtnView.swift */; };
+		FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		FE5538D91E7ACCCE0018E624 /* YYSwiftDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYSwiftDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		FE5538DF1E7ACCCE0018E624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5538EB1E7ACFF80018E624 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
+		FECED2791E8104A300CBB764 /* MaskBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnView.swift; sourceTree = "<group>"; };
+		FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */,
+				FE5538EB1E7ACFF80018E624 /* Global.swift */,
 				FE5538BF1E7ACCCE0018E624 /* ViewController.swift */,
+				FECED2781E8104A300CBB764 /* 视差错觉 */,
+				FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */,
 				FE5538C11E7ACCCE0018E624 /* Main.storyboard */,
 				FE5538C41E7ACCCE0018E624 /* Assets.xcassets */,
 				FE5538C61E7ACCCE0018E624 /* LaunchScreen.storyboard */,
@@ -123,6 +134,15 @@
 				FE5538DF1E7ACCCE0018E624 /* Info.plist */,
 			);
 			path = YYSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		FECED2781E8104A300CBB764 /* 视差错觉 */ = {
+			isa = PBXGroup;
+			children = (
+				FECED2791E8104A300CBB764 /* MaskBtnView.swift */,
+				FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */,
+			);
+			path = "视差错觉";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5538EE1E7BBBA80018E624 /* WaterFallFlowLayout.swift in Sources */,
 				FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */,
 				FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */,
+				FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */,
+				FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */,
+				FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +440,7 @@
 				DEVELOPMENT_TEAM = 3K29XJGJP4;
 				INFOPLIST_FILE = YYSwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huibao.YYSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -512,6 +537,7 @@
 				FE5538E41E7ACCCE0018E624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE5538E51E7ACCCE0018E624 /* Build configuration list for PBXNativeTarget "YYSwiftDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +546,7 @@
 				FE5538E71E7ACCCE0018E624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE5538E81E7ACCCE0018E624 /* Build configuration list for PBXNativeTarget "YYSwiftDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +555,7 @@
 				FE5538EA1E7ACCCE0018E624 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

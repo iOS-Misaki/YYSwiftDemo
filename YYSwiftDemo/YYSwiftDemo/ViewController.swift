@@ -8,16 +8,81 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    let itemArray = ["瀑布流（WaterFall）","滚动视差（Parallax）","拖拽排序（MoveCell）","暂时没有（点我刷新）"]
+    
+    lazy var customTableView : UITableView = {
+        let tableView = UITableView()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 80
+        tableView.separatorStyle = .none
+        tableView.register(UITableViewCell.classForCoder() , forCellReuseIdentifier: "cell")
+        self.view.addSubview(tableView)
+        tableView.frame = self.view.bounds
+        return tableView
+    } ()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        reloadTableView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.itemArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = self.itemArray[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 20) 
+        cell.backgroundColor = randomColor()
+        cell.selectionStyle = .none
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let MBVC = MaskBtnViewController()
+        MBVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(MBVC, animated: true)
+    }
+    
+    func reloadTableView() {
+        
+        self.customTableView.reloadData()
+        
+        let cells = self.customTableView.visibleCells as Array<UITableViewCell>
+        
+        let kheight = h(self.customTableView)
+        
+        //偏移系数
+        let koffset: CGFloat = 1
+        
+        //阻尼系数(0~1)
+        let kdamp: CGFloat = 0.9
+        
+        for cell in cells {
+            cell.transform = CGAffineTransform(translationX: -SCREEN_WIDTH * koffset, y: kheight)
+        }
+        
+        var index = 0
+        for cell in cells {
+            UIView.animate(withDuration: 1, delay: 0.05 * Double(index), usingSpringWithDamping: kdamp, initialSpringVelocity: 0, options: [], animations: {
+                cell.transform = CGAffineTransform(translationX: 0, y: 0)
+            }, completion: nil)
+            index += 1
+        }
     }
 
 
