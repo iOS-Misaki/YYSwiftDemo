@@ -15,9 +15,10 @@
 		FE5538D31E7ACCCE0018E624 /* YYSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538D21E7ACCCE0018E624 /* YYSwiftDemoTests.swift */; };
 		FE5538DE1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */; };
 		FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538EB1E7ACFF80018E624 /* Global.swift */; };
-		FE5538EE1E7BBBA80018E624 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */; };
 		FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED2791E8104A300CBB764 /* MaskBtnView.swift */; };
 		FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */; };
+		FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */; };
+		FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +53,10 @@
 		FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		FE5538DF1E7ACCCE0018E624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE5538EB1E7ACFF80018E624 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
 		FECED2791E8104A300CBB764 /* MaskBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnView.swift; sourceTree = "<group>"; };
 		FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnViewController.swift; sourceTree = "<group>"; };
+		FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
+		FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +110,8 @@
 				FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */,
 				FE5538EB1E7ACFF80018E624 /* Global.swift */,
 				FE5538BF1E7ACCCE0018E624 /* ViewController.swift */,
+				FEDC3A1D1E8246930097D909 /* 瀑布流 */,
 				FECED2781E8104A300CBB764 /* 视差错觉 */,
-				FE5538ED1E7BBBA80018E624 /* WaterFallFlowLayout.swift */,
 				FE5538C11E7ACCCE0018E624 /* Main.storyboard */,
 				FE5538C41E7ACCCE0018E624 /* Assets.xcassets */,
 				FE5538C61E7ACCCE0018E624 /* LaunchScreen.storyboard */,
@@ -143,6 +145,15 @@
 				FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */,
 			);
 			path = "视差错觉";
+			sourceTree = "<group>";
+		};
+		FEDC3A1D1E8246930097D909 /* 瀑布流 */ = {
+			isa = PBXGroup;
+			children = (
+				FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */,
+				FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */,
+			);
+			path = "瀑布流";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +293,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5538EE1E7BBBA80018E624 /* WaterFallFlowLayout.swift in Sources */,
+				FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */,
+				FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */,
 				FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */,
 				FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */,
 				FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */,

@@ -53,9 +53,22 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let MBVC = MaskBtnViewController()
-        MBVC.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(MBVC, animated: true)
+        
+        if indexPath.row == 0 {
+            
+            let MBVC = MaskBtnViewController()
+            MBVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(MBVC, animated: true)
+            
+        } else if indexPath.row == 1 {
+            
+            let WVC = WaterfallViewController()
+            WVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(WVC, animated: true)
+            
+        }
+        
+        
     }
     
     func reloadTableView() {
