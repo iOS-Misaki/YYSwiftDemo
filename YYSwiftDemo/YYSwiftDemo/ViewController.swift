@@ -66,6 +66,12 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             WVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(WVC, animated: true)
             
+        } else if indexPath.row == 2 {
+            
+            let PEVC = ParallaxEffectViewController()
+            PEVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(PEVC, animated: true)
+            
         }
         
         

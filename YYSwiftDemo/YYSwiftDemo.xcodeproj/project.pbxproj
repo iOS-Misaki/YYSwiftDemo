@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2D25DD1E836A7700462786 /* ParallaxEffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */; };
+		FE2D25DF1E836AAF00462786 /* ParallaxEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */; };
 		FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */; };
 		FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538BF1E7ACCCE0018E624 /* ViewController.swift */; };
 		FE5538C31E7ACCCE0018E624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5538C11E7ACCCE0018E624 /* Main.storyboard */; };
@@ -15,6 +17,13 @@
 		FE5538D31E7ACCCE0018E624 /* YYSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538D21E7ACCCE0018E624 /* YYSwiftDemoTests.swift */; };
 		FE5538DE1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */; };
 		FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538EB1E7ACFF80018E624 /* Global.swift */; };
+		FE5856681E84AE1E00C580D5 /* PECell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5856671E84AE1E00C580D5 /* PECell.swift */; };
+		FE58566F1E84B81700C580D5 /* bg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE5856691E84B81700C580D5 /* bg-1.png */; };
+		FE5856701E84B81700C580D5 /* bg-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566A1E84B81700C580D5 /* bg-2.png */; };
+		FE5856711E84B81700C580D5 /* bg-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566B1E84B81700C580D5 /* bg-3.png */; };
+		FE5856721E84B81700C580D5 /* bg-4.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566C1E84B81700C580D5 /* bg-4.png */; };
+		FE5856731E84B81700C580D5 /* bg-5.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566D1E84B81700C580D5 /* bg-5.png */; };
+		FE5856741E84B81700C580D5 /* bg-6.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566E1E84B81700C580D5 /* bg-6.png */; };
 		FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED2791E8104A300CBB764 /* MaskBtnView.swift */; };
 		FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */; };
 		FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */; };
@@ -39,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxEffectCell.swift; sourceTree = "<group>"; };
+		FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxEffectViewController.swift; sourceTree = "<group>"; };
 		FE5538BA1E7ACCCE0018E624 /* YYSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5538BF1E7ACCCE0018E624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +64,13 @@
 		FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		FE5538DF1E7ACCCE0018E624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE5538EB1E7ACFF80018E624 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		FE5856671E84AE1E00C580D5 /* PECell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PECell.swift; sourceTree = "<group>"; };
+		FE5856691E84B81700C580D5 /* bg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-1.png"; sourceTree = "<group>"; };
+		FE58566A1E84B81700C580D5 /* bg-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-2.png"; sourceTree = "<group>"; };
+		FE58566B1E84B81700C580D5 /* bg-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-3.png"; sourceTree = "<group>"; };
+		FE58566C1E84B81700C580D5 /* bg-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-4.png"; sourceTree = "<group>"; };
+		FE58566D1E84B81700C580D5 /* bg-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-5.png"; sourceTree = "<group>"; };
+		FE58566E1E84B81700C580D5 /* bg-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-6.png"; sourceTree = "<group>"; };
 		FECED2791E8104A300CBB764 /* MaskBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnView.swift; sourceTree = "<group>"; };
 		FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnViewController.swift; sourceTree = "<group>"; };
 		FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
@@ -84,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE2D25D31E836A7700462786 /* 滚动视差 */ = {
+			isa = PBXGroup;
+			children = (
+				FE5856691E84B81700C580D5 /* bg-1.png */,
+				FE58566A1E84B81700C580D5 /* bg-2.png */,
+				FE58566B1E84B81700C580D5 /* bg-3.png */,
+				FE58566C1E84B81700C580D5 /* bg-4.png */,
+				FE58566D1E84B81700C580D5 /* bg-5.png */,
+				FE58566E1E84B81700C580D5 /* bg-6.png */,
+				FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */,
+				FE5856671E84AE1E00C580D5 /* PECell.swift */,
+				FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */,
+			);
+			path = "滚动视差";
+			sourceTree = "<group>";
+		};
 		FE5538B11E7ACCCE0018E624 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +144,7 @@
 				FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */,
 				FE5538EB1E7ACFF80018E624 /* Global.swift */,
 				FE5538BF1E7ACCCE0018E624 /* ViewController.swift */,
+				FE2D25D31E836A7700462786 /* 滚动视差 */,
 				FEDC3A1D1E8246930097D909 /* 瀑布流 */,
 				FECED2781E8104A300CBB764 /* 视差错觉 */,
 				FE5538C11E7ACCCE0018E624 /* Main.storyboard */,
@@ -267,7 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5538C81E7ACCCE0018E624 /* LaunchScreen.storyboard in Resources */,
+				FE5856701E84B81700C580D5 /* bg-2.png in Resources */,
+				FE5856741E84B81700C580D5 /* bg-6.png in Resources */,
+				FE5856711E84B81700C580D5 /* bg-3.png in Resources */,
 				FE5538C51E7ACCCE0018E624 /* Assets.xcassets in Resources */,
+				FE5856721E84B81700C580D5 /* bg-4.png in Resources */,
+				FE58566F1E84B81700C580D5 /* bg-1.png in Resources */,
+				FE5856731E84B81700C580D5 /* bg-5.png in Resources */,
 				FE5538C31E7ACCCE0018E624 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,13 +334,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5856681E84AE1E00C580D5 /* PECell.swift in Sources */,
 				FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */,
 				FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */,
 				FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */,
 				FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */,
 				FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */,
+				FE2D25DD1E836A7700462786 /* ParallaxEffectCell.swift in Sources */,
 				FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */,
 				FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */,
+				FE2D25DF1E836AAF00462786 /* ParallaxEffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,11 +15,33 @@ class WaterfallViewController: UIViewController, UICollectionViewDelegate, UICol
     lazy var flowLayout: WaterFallFlowLayout = WaterFallFlowLayout()
     
     var collectionView: UICollectionView!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return self.isHiddenStatusBar
+    }
+    
+    private var isHiddenStatusBar: Bool = false {
+        didSet {
+            UIView.animate(withDuration: 0.3) { () -> Void in
+                self.setNeedsStatusBarAppearanceUpdate()
+            }
+        }
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         self.view.backgroundColor = UIColor.white
         
         heightArray = []
