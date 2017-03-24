@@ -59,6 +59,7 @@ class ParallaxEffectViewController: UIViewController, UIScrollViewDelegate, UITa
         if indexPath == self.selectedCellIndex {
             cell.gradeView.alpha = self.selectedCellGradeAlpha
         }
+        
         cell.backgroundIV.image = UIImage.init(named:"bg-\(indexPath.row % 6 + 1)")
         cell.titleLab.text = "Misaki_\(indexPath.row)"
         return cell
