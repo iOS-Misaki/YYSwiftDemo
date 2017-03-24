@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    let itemArray = ["瀑布流（WaterFall）","滚动视差（Parallax）","拖拽排序（MoveCell）","暂时没有（点我刷新）"]
+    let itemArray = ["视差错觉","瀑布流（WaterFall）","滚动视差（Parallax）","拖拽排序（MoveCell）","暂时没有（点我刷新）"]
     
     lazy var customTableView : UITableView = {
         let tableView = UITableView()

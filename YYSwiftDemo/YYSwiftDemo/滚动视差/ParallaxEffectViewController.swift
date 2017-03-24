@@ -108,11 +108,12 @@ class ParallaxEffectViewController: UIViewController, UIScrollViewDelegate, UITa
         }
     }
     
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         PETableView.visibleCells.forEach { cell in
             let parallaxCell = cell as! PECell
             parallaxCell.parallaxOffset(tableView: self.PETableView)
         }
     }
+    
 
 }
