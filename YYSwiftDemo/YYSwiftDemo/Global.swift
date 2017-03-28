@@ -43,6 +43,23 @@ func h(_ object: UIView) -> CGFloat {
     return object.frame.size.height
 }
 
+func OCCGRect(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
+    return CGRect(x: x, y: y, width: width, height: height)
+}
+
+func OCCGSize(_ width: CGFloat, _ height: CGFloat) -> CGSize {
+    return CGSize(width: width, height: height)
+}
+
+func OCCGPoint(_ x: CGFloat, _ y: CGFloat) -> CGPoint {
+    return CGPoint(x: x, y: y)
+}
+
+func OCCGRect(_ origin: CGPoint, _ size: CGSize) -> CGRect {
+    return CGRect(origin: origin, size: size)
+}
+
+
 func dPrint(item:@autoclosure () -> Any) {
     #if DEBUG
     //之所以加上@autoclosure 是因为想延迟对传入的表达式的计算，进一步优化性能

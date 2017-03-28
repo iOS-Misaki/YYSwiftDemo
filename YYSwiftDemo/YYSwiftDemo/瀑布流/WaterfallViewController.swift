@@ -103,7 +103,7 @@ class WaterfallViewController: UIViewController, UICollectionViewDelegate, UICol
         self.view.addSubview(view)
 
         for i in 0..<3 {
-            let hSlider = UISlider.init(frame: CGRect(x: 50, y: 60 + 60 * i, width:Int(SCREEN_WIDTH - 100), height: 20))
+            let hSlider = UISlider.init(frame: CGRect(x: 50, y: 20 + 60 * i, width:Int(SCREEN_WIDTH - 100), height: 20))
             hSlider.tag = i + 100;
             hSlider.maximumValue = 20;
             hSlider.minimumValue = 0;
@@ -117,6 +117,9 @@ class WaterfallViewController: UIViewController, UICollectionViewDelegate, UICol
                 hSlider.value = Float(self.flowLayout.vItemSpace)
             default:
                 hSlider.value = Float(self.flowLayout.lineCount) * 2
+                
+                hSlider.minimumValue = 1;
+                hSlider.maximumValue = 10;
             }
         }
         
@@ -128,7 +131,7 @@ class WaterfallViewController: UIViewController, UICollectionViewDelegate, UICol
         } else if slider.tag == 101 {
             self.flowLayout.vItemSpace = CGFloat(slider.value)
         } else if slider.tag == 102 {
-            self.flowLayout.lineCount = Int(slider.value / 2)
+            self.flowLayout.lineCount = Int(slider.value)
         }
     }
     

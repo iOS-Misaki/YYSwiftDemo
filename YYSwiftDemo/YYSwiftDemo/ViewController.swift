@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    let itemArray = ["视差错觉","瀑布流（WaterFall）","滚动视差（Parallax）","拖拽排序（MoveCell）","暂时没有（点我刷新）"]
+    let itemArray = ["视差错觉（Visual Illusion）","瀑布流（WaterFall）","滚动视差（Parallax）","拖拽排序（DragCell）","暂时没有（点我刷新）"]
     
     lazy var customTableView : UITableView = {
         let tableView = UITableView()
@@ -72,6 +72,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             PEVC.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(PEVC, animated: true)
             
+        } else if indexPath.row == 3 {
+            
+            let DCVC = DragCellViewController()
+            DCVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(DCVC, animated: true)
+            
+        } else {
+            
+            reloadTableView()
+            
         }
         
         
@@ -104,6 +114,139 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         }
     }
 
+    func swapTwoInts( a: inout Int, b: inout Int) {
+        let temp = a
+        a = b
+        b = temp
+    }
+    
+    func swapTwoString( a: inout String, b: inout String) {
+        let temp = a
+        a = b
+        b = temp
+    }
+    
+    func swapTwoValue<T>(a: inout T, b: inout T) {
+        let temp = a
+        a = b
+        b = temp
+    }
+    
+    //泛型不用指定具体的参数类型
+    func test() {
+        
+        var c = 10
+        var d = 10
+        swapTwoInts(a: &c, b: &d)
+//        swapTwoString(a: &"10", b: &"9")
+        swapTwoValue(a: &c, b: &d)
+        
+        var string1 = "sjih"
+        var string2 = "hisfb"
+        swapTwoValue(a: &string1, b: &string2)
+    }
+    
+    struct IntStack {
+        var items: Array<Int> = []
+        
+        //入栈
+        mutating func push(item: Int) {
+            items.append(item)
+        }
+        //出栈
+        mutating func pop() -> Int {
+            return items.removeLast()
+        }
+    }
+    
+//    //泛型版本
+//    struct Stack<Element> {
+//        var items = [Element]()
+//        
+//        
+//        mutating func push(item:Element) {
+//            items.append(item)
+//        }
+//        
+//        mutating func pop() -> Element {
+//            return items.removeLast()
+//        }
+//    }
+    
+    
+    // typealias 别名的用法
+    func  distanceBetweenPoint(point: CGPoint, toPoint: CGPoint) -> Double {
+        let dx = Double(toPoint.x - point.x)
+        let dy = Double(toPoint.y - point.y)
+        return sqrt(dx*dx + dy*dy)
+    }
+    
+    typealias Location = CGPoint
+    typealias Distance = Double
+    
+    func distanceBetweenPoin(point: Location, toPoint: Location) -> Distance {
+        let dx = Double(toPoint.x - point.x)
+        let dy = Double(toPoint.y - point.y)
+        return sqrt(dx*dx + dy*dy)
+    }
+    
+    //用 typealias 定义闭包
+//    typealias sendValueClosure = (_ sendString: String) -> Void
+//    var callBackString: sendValueClosure
+    
+    func UI() {
+        let label = UILabel()
+        self.view.addSubview(label)
+        
+        
+        let point = OCCGPoint(0, 0)
+        let size = OCCGSize(200, 40)
+        label.frame = OCCGRect(point, size)
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 }
 

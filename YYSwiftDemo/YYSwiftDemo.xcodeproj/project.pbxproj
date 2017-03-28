@@ -26,6 +26,8 @@
 		FE5856741E84B81700C580D5 /* bg-6.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566E1E84B81700C580D5 /* bg-6.png */; };
 		FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED2791E8104A300CBB764 /* MaskBtnView.swift */; };
 		FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */; };
+		FED5869E1E8A00EB0005C1AB /* DragCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5869D1E8A00EB0005C1AB /* DragCell.swift */; };
+		FED586A01E8A02F30005C1AB /* DragCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5869F1E8A02F30005C1AB /* DragCellViewController.swift */; };
 		FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */; };
 		FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,8 @@
 		FE58566E1E84B81700C580D5 /* bg-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-6.png"; sourceTree = "<group>"; };
 		FECED2791E8104A300CBB764 /* MaskBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnView.swift; sourceTree = "<group>"; };
 		FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnViewController.swift; sourceTree = "<group>"; };
+		FED5869D1E8A00EB0005C1AB /* DragCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragCell.swift; sourceTree = "<group>"; };
+		FED5869F1E8A02F30005C1AB /* DragCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragCellViewController.swift; sourceTree = "<group>"; };
 		FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
 		FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +148,7 @@
 				FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */,
 				FE5538EB1E7ACFF80018E624 /* Global.swift */,
 				FE5538BF1E7ACCCE0018E624 /* ViewController.swift */,
+				FED5869C1E8A00820005C1AB /* 拖拽排序 */,
 				FE2D25D31E836A7700462786 /* 滚动视差 */,
 				FEDC3A1D1E8246930097D909 /* 瀑布流 */,
 				FECED2781E8104A300CBB764 /* 视差错觉 */,
@@ -180,6 +185,15 @@
 				FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */,
 			);
 			path = "视差错觉";
+			sourceTree = "<group>";
+		};
+		FED5869C1E8A00820005C1AB /* 拖拽排序 */ = {
+			isa = PBXGroup;
+			children = (
+				FED5869D1E8A00EB0005C1AB /* DragCell.swift */,
+				FED5869F1E8A02F30005C1AB /* DragCellViewController.swift */,
+			);
+			path = "拖拽排序";
 			sourceTree = "<group>";
 		};
 		FEDC3A1D1E8246930097D909 /* 瀑布流 */ = {
@@ -342,7 +356,9 @@
 				FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */,
 				FE2D25DD1E836A7700462786 /* ParallaxEffectCell.swift in Sources */,
 				FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */,
+				FED586A01E8A02F30005C1AB /* DragCellViewController.swift in Sources */,
 				FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */,
+				FED5869E1E8A00EB0005C1AB /* DragCell.swift in Sources */,
 				FE2D25DF1E836AAF00462786 /* ParallaxEffectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
