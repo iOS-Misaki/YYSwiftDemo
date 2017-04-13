@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE2D25DD1E836A7700462786 /* ParallaxEffectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */; };
-		FE2D25DF1E836AAF00462786 /* ParallaxEffectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */; };
+		FE184E7D1E9F6AEC007E370D /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE184E7C1E9F6AEC007E370D /* ParallaxCell.swift */; };
+		FE184E7F1E9F727E007E370D /* ParallaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE184E7E1E9F727E007E370D /* ParallaxViewController.swift */; };
+		FE1DB35B1E8C97F30020ADB5 /* ScanerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DB35A1E8C97F30020ADB5 /* ScanerView.swift */; };
+		FE1DB35D1E8C9E220020ADB5 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1DB35C1E8C9E220020ADB5 /* ScannerViewController.swift */; };
+		FE1DB35F1E8CAB240020ADB5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = FE1DB35E1E8CAB240020ADB5 /* line.png */; };
 		FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */; };
 		FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538BF1E7ACCCE0018E624 /* ViewController.swift */; };
 		FE5538C31E7ACCCE0018E624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5538C11E7ACCCE0018E624 /* Main.storyboard */; };
@@ -17,17 +20,19 @@
 		FE5538D31E7ACCCE0018E624 /* YYSwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538D21E7ACCCE0018E624 /* YYSwiftDemoTests.swift */; };
 		FE5538DE1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */; };
 		FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5538EB1E7ACFF80018E624 /* Global.swift */; };
-		FE5856681E84AE1E00C580D5 /* PECell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5856671E84AE1E00C580D5 /* PECell.swift */; };
 		FE58566F1E84B81700C580D5 /* bg-1.png in Resources */ = {isa = PBXBuildFile; fileRef = FE5856691E84B81700C580D5 /* bg-1.png */; };
 		FE5856701E84B81700C580D5 /* bg-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566A1E84B81700C580D5 /* bg-2.png */; };
 		FE5856711E84B81700C580D5 /* bg-3.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566B1E84B81700C580D5 /* bg-3.png */; };
 		FE5856721E84B81700C580D5 /* bg-4.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566C1E84B81700C580D5 /* bg-4.png */; };
 		FE5856731E84B81700C580D5 /* bg-5.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566D1E84B81700C580D5 /* bg-5.png */; };
 		FE5856741E84B81700C580D5 /* bg-6.png in Resources */ = {isa = PBXBuildFile; fileRef = FE58566E1E84B81700C580D5 /* bg-6.png */; };
+		FEB0BDA51E8B4AF10008E781 /* NavBarTransparent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB0BDA41E8B4AF10008E781 /* NavBarTransparent.swift */; };
+		FEC6803E1E8B84F80066D5BF /* NestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6803D1E8B84F80066D5BF /* NestViewController.swift */; };
 		FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED2791E8104A300CBB764 /* MaskBtnView.swift */; };
 		FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */; };
 		FED5869E1E8A00EB0005C1AB /* DragCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5869D1E8A00EB0005C1AB /* DragCell.swift */; };
 		FED586A01E8A02F30005C1AB /* DragCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED5869F1E8A02F30005C1AB /* DragCellViewController.swift */; };
+		FED833871E8F9E0600EC2EE6 /* PopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED833861E8F9E0600EC2EE6 /* PopView.swift */; };
 		FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */; };
 		FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */; };
 /* End PBXBuildFile section */
@@ -50,8 +55,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxEffectCell.swift; sourceTree = "<group>"; };
-		FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxEffectViewController.swift; sourceTree = "<group>"; };
+		FE184E7C1E9F6AEC007E370D /* ParallaxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		FE184E7E1E9F727E007E370D /* ParallaxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParallaxViewController.swift; sourceTree = "<group>"; };
+		FE1DB35A1E8C97F30020ADB5 /* ScanerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanerView.swift; sourceTree = "<group>"; };
+		FE1DB35C1E8C9E220020ADB5 /* ScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		FE1DB35E1E8CAB240020ADB5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		FE5538BA1E7ACCCE0018E624 /* YYSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5538BF1E7ACCCE0018E624 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,17 +74,19 @@
 		FE5538DD1E7ACCCE0018E624 /* YYSwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYSwiftDemoUITests.swift; sourceTree = "<group>"; };
 		FE5538DF1E7ACCCE0018E624 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE5538EB1E7ACFF80018E624 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		FE5856671E84AE1E00C580D5 /* PECell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PECell.swift; sourceTree = "<group>"; };
 		FE5856691E84B81700C580D5 /* bg-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-1.png"; sourceTree = "<group>"; };
 		FE58566A1E84B81700C580D5 /* bg-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-2.png"; sourceTree = "<group>"; };
 		FE58566B1E84B81700C580D5 /* bg-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-3.png"; sourceTree = "<group>"; };
 		FE58566C1E84B81700C580D5 /* bg-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-4.png"; sourceTree = "<group>"; };
 		FE58566D1E84B81700C580D5 /* bg-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-5.png"; sourceTree = "<group>"; };
 		FE58566E1E84B81700C580D5 /* bg-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-6.png"; sourceTree = "<group>"; };
+		FEB0BDA41E8B4AF10008E781 /* NavBarTransparent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarTransparent.swift; sourceTree = "<group>"; };
+		FEC6803D1E8B84F80066D5BF /* NestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestViewController.swift; sourceTree = "<group>"; };
 		FECED2791E8104A300CBB764 /* MaskBtnView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnView.swift; sourceTree = "<group>"; };
 		FECED27A1E8104A300CBB764 /* MaskBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaskBtnViewController.swift; sourceTree = "<group>"; };
 		FED5869D1E8A00EB0005C1AB /* DragCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragCell.swift; sourceTree = "<group>"; };
 		FED5869F1E8A02F30005C1AB /* DragCellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragCellViewController.swift; sourceTree = "<group>"; };
+		FED833861E8F9E0600EC2EE6 /* PopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopView.swift; sourceTree = "<group>"; };
 		FEDC3A1E1E8246930097D909 /* WaterFallFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallFlowLayout.swift; sourceTree = "<group>"; };
 		FEDC3A1F1E8246930097D909 /* WaterfallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,9 +125,8 @@
 				FE58566C1E84B81700C580D5 /* bg-4.png */,
 				FE58566D1E84B81700C580D5 /* bg-5.png */,
 				FE58566E1E84B81700C580D5 /* bg-6.png */,
-				FE2D25D81E836A7700462786 /* ParallaxEffectCell.swift */,
-				FE5856671E84AE1E00C580D5 /* PECell.swift */,
-				FE2D25DE1E836AAF00462786 /* ParallaxEffectViewController.swift */,
+				FE184E7C1E9F6AEC007E370D /* ParallaxCell.swift */,
+				FE184E7E1E9F727E007E370D /* ParallaxViewController.swift */,
 			);
 			path = "滚动视差";
 			sourceTree = "<group>";
@@ -148,6 +157,12 @@
 				FE5538BD1E7ACCCE0018E624 /* AppDelegate.swift */,
 				FE5538EB1E7ACFF80018E624 /* Global.swift */,
 				FE5538BF1E7ACCCE0018E624 /* ViewController.swift */,
+				FE1DB35A1E8C97F30020ADB5 /* ScanerView.swift */,
+				FE1DB35C1E8C9E220020ADB5 /* ScannerViewController.swift */,
+				FE1DB35E1E8CAB240020ADB5 /* line.png */,
+				FEC6803D1E8B84F80066D5BF /* NestViewController.swift */,
+				FED833861E8F9E0600EC2EE6 /* PopView.swift */,
+				FEB0BDA31E8B49A30008E781 /*  导航栏过渡 */,
 				FED5869C1E8A00820005C1AB /* 拖拽排序 */,
 				FE2D25D31E836A7700462786 /* 滚动视差 */,
 				FEDC3A1D1E8246930097D909 /* 瀑布流 */,
@@ -176,6 +191,14 @@
 				FE5538DF1E7ACCCE0018E624 /* Info.plist */,
 			);
 			path = YYSwiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		FEB0BDA31E8B49A30008E781 /*  导航栏过渡 */ = {
+			isa = PBXGroup;
+			children = (
+				FEB0BDA41E8B4AF10008E781 /* NavBarTransparent.swift */,
+			);
+			path = " 导航栏过渡";
 			sourceTree = "<group>";
 		};
 		FECED2781E8104A300CBB764 /* 视差错觉 */ = {
@@ -316,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5538C81E7ACCCE0018E624 /* LaunchScreen.storyboard in Resources */,
+				FE1DB35F1E8CAB240020ADB5 /* line.png in Resources */,
 				FE5856701E84B81700C580D5 /* bg-2.png in Resources */,
 				FE5856741E84B81700C580D5 /* bg-6.png in Resources */,
 				FE5856711E84B81700C580D5 /* bg-3.png in Resources */,
@@ -348,18 +372,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5856681E84AE1E00C580D5 /* PECell.swift in Sources */,
+				FE184E7D1E9F6AEC007E370D /* ParallaxCell.swift in Sources */,
 				FEDC3A201E8246930097D909 /* WaterFallFlowLayout.swift in Sources */,
+				FE1DB35B1E8C97F30020ADB5 /* ScanerView.swift in Sources */,
 				FEDC3A211E8246930097D909 /* WaterfallViewController.swift in Sources */,
+				FEB0BDA51E8B4AF10008E781 /* NavBarTransparent.swift in Sources */,
 				FE5538C01E7ACCCE0018E624 /* ViewController.swift in Sources */,
 				FE5538BE1E7ACCCE0018E624 /* AppDelegate.swift in Sources */,
 				FE5538EC1E7ACFF80018E624 /* Global.swift in Sources */,
-				FE2D25DD1E836A7700462786 /* ParallaxEffectCell.swift in Sources */,
 				FECED27B1E8104A300CBB764 /* MaskBtnView.swift in Sources */,
 				FED586A01E8A02F30005C1AB /* DragCellViewController.swift in Sources */,
+				FEC6803E1E8B84F80066D5BF /* NestViewController.swift in Sources */,
+				FE184E7F1E9F727E007E370D /* ParallaxViewController.swift in Sources */,
 				FECED27C1E8104A300CBB764 /* MaskBtnViewController.swift in Sources */,
 				FED5869E1E8A00EB0005C1AB /* DragCell.swift in Sources */,
-				FE2D25DF1E836AAF00462786 /* ParallaxEffectViewController.swift in Sources */,
+				FED833871E8F9E0600EC2EE6 /* PopView.swift in Sources */,
+				FE1DB35D1E8C9E220020ADB5 /* ScannerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

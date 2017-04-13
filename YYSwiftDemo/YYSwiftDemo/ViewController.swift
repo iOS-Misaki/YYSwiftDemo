@@ -68,9 +68,9 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         } else if indexPath.row == 2 {
             
-            let PEVC = ParallaxEffectViewController()
-            PEVC.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(PEVC, animated: true)
+            let PVC = ParallaxViewController()
+            PVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(PVC, animated: true)
             
         } else if indexPath.row == 3 {
             
@@ -80,7 +80,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         } else {
             
-            reloadTableView()
+//            let SVC = ScannerViewController()
+//            SVC.hidesBottomBarWhenPushed = true
+//            self.navigationController?.pushViewController(SVC, animated: true)
+            
+//            reloadTableView()
+            
+            let view = PopView()
+//            view.showInWindow()
+            view.showInView(superView: self.view)
             
         }
         
