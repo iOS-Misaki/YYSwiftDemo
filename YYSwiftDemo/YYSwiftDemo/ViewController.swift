@@ -80,6 +80,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             
         } else {
             
+            
+            
 //            let SVC = ScannerViewController()
 //            SVC.hidesBottomBarWhenPushed = true
 //            self.navigationController?.pushViewController(SVC, animated: true)
