@@ -52,14 +52,26 @@ class DragCellViewController: UIViewController, UICollectionViewDelegate, UIColl
             
             if selectedIndexPath != nil {
                 //发现有时候会有 selectedIndexPath 为空的时候
-                dragCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath!)
+                if #available(iOS 9.0, *) {
+                    dragCollectionView.beginInteractiveMovementForItem(at: selectedIndexPath!)
+                } else {
+                    // Fallback on earlier versions
+                }
             }
             
         case .changed:
             let point = sender.location(in: dragCollectionView)
-            dragCollectionView.updateInteractiveMovementTargetPosition(point)
+            if #available(iOS 9.0, *) {
+                dragCollectionView.updateInteractiveMovementTargetPosition(point)
+            } else {
+                // Fallback on earlier versions
+            }
         case .ended:
-            dragCollectionView.endInteractiveMovement()
+            if #available(iOS 9.0, *) {
+                dragCollectionView.endInteractiveMovement()
+            } else {
+                // Fallback on earlier versions
+            }
         default: break
             
         }

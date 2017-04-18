@@ -10,6 +10,7 @@ import UIKit
 
 class ParallaxViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate{
     
+    
     private var cellHeight: CGFloat = 120
     private var selectedCellHeight: CGFloat = 310
     
